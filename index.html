@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Expense-Tracker</h1>
+
+    <form id="expense-form">
+        <input type="text" id="nama" placeholder="Nama pengeluaran" required>
+        <input type="number" id="jumlah" placeholder="Jumlah (Rp)" required>
+        <select id="kategori">
+            <option value="jajan">Jajan</option>
+            <option value="transport">Transport</option>
+            <option value="lainnya">Lainnya</option>
+        </select>
+        <button type="submit">Tambahkan</button>
+    </form>
+    <h2>Expenses List</h2>
+    <ul id="expense-list"></ul>
+
+    <h3>Total: Rp <span id="total">0</span></h3>
+<script src="script.js"></script>
+</body>
+</html>
